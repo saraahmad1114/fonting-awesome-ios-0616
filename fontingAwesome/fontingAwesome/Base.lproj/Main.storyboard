@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Fonting Awesome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FAKFontingAwesomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTU-p5-t67">
+                                <rect key="frame" x="277" y="165" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="firstButtonDidTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="9og-tJ-jDm"/>
+                                    <action selector="fontingAwesome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4QW-Zs-zul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWu-rw-LHJ">
+                                <rect key="frame" x="277" y="262" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondButtonDidTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="tKY-ha-OCg"/>
+                                    <action selector="secondFontAwesome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jW-Sa-hyv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiv-mK-Khg">
+                                <rect key="frame" x="277" y="358" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMJ-PV-rVT">
+                                <rect key="frame" x="277" y="358" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="thirdButtonDidTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="B0y-ra-2Zj"/>
+                                    <action selector="thirdFontAwesome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9mO-KX-aGp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pew-nf-Rjf">
+                                <rect key="frame" x="277" y="444" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fourthButtonDidTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="cK7-Sh-ze6"/>
+                                    <action selector="secondCocoapod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qqm-SU-WJy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fontingAwesomeOulet" destination="pTU-p5-t67" id="hoE-vA-0XB"/>
+                        <outlet property="secondCocoapodOutlet" destination="Pew-nf-Rjf" id="zFr-YS-nXI"/>
+                        <outlet property="secondFontAwesomeOutlet" destination="qWu-rw-LHJ" id="pMt-5d-grb"/>
+                        <outlet property="thirdFontAwesomeOutlet" destination="qiv-mK-Khg" id="mSd-rc-Xoo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+</document>
